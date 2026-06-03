@@ -1,2 +1,0 @@
-# physing-detector
-physing detector
