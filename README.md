@@ -1,9 +1,9 @@
 ## MedAI Nexus AI Healthcare System
 --------------------------------------------------------------------
 
-** MedAI Nexus is an intelligent healthcare platform that combines Machine Learning, Generative AI, Retrieval-Augmented Generation (RAG), and Clinical Decision Support Systems to provide predictive diagnostics, medical report understanding, and AI-assisted healthcare services.
+MedAI Nexus is an intelligent healthcare platform that combines Machine Learning, Generative AI, Retrieval-Augmented Generation (RAG), and Clinical Decision Support Systems to provide predictive diagnostics, medical report understanding, and AI-assisted healthcare services.
 
-The platform is designed to bridge the gap between patients and healthcare professionals through accessible, explainable, and secure AI technologies.**
+The platform is designed to bridge the gap between patients and healthcare professionals through accessible, explainable, and secure AI technologies.
 
 ---
 
