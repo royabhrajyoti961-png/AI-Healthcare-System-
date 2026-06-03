@@ -19,9 +19,7 @@
 
 ---
 
-<div align="center">
 
-<img src="docs/assets/hero-banner.svg" alt="AI Healthcare System" width="100%"/>
 
 <br/>
 
