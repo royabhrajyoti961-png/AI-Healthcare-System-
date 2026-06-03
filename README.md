@@ -1,6 +1,8 @@
 # AI Healthcare System
 
-**AI-powered healthcare platform combining Machine Learning for multi-disease prediction (Diabetes, Heart, Liver, Kidney, Lungs) with Generative AI for intelligent medical assistance and lab report analysis.**
+** MedAI Nexus is an intelligent healthcare platform that combines Machine Learning, Generative AI, Retrieval-Augmented Generation (RAG), and Clinical Decision Support Systems to provide predictive diagnostics, medical report understanding, and AI-assisted healthcare services.
+
+The platform is designed to bridge the gap between patients and healthcare professionals through accessible, explainable, and secure AI technologies.**
 
 ---
 
@@ -47,6 +49,71 @@
 |---|---|---|
 | JWT + bcrypt auth, RBAC (patient/doctor/admin), audit logging, rate limiting, PII redaction | Docker Compose, Enterprise Stack, Render, Kubernetes, Terraform AWS | Pytest + coverage, CodeQL, Docker builds, HuggingFace, Dependabot |
 
+## Other Features 
+🧠 Multi-Disease Prediction System
+
+Advanced machine learning models trained on healthcare datasets:
+
+Disease	Prediction Status
+Diabetes	✅
+Heart Disease	✅
+Liver Disease	✅
+Kidney Disease	✅
+Lung Disease	✅
+Explainable AI
+SHAP Interpretability
+Risk Scoring
+Feature Importance Analysis
+Confidence Estimation
+
+## 🤖 AI Medical Assistant
+
+An intelligent healthcare chatbot capable of:
+
+Symptom-based guidance
+Medical knowledge retrieval
+Healthcare FAQs
+Treatment awareness
+Medication information
+Patient support interactions
+
+##📄 Smart Lab Report Analysis
+
+Upload laboratory reports and receive:
+
+Automated report summaries
+Abnormal parameter detection
+Clinical observations
+Health risk indicators
+Easy-to-understand explanations
+
+## 📚 Retrieval-Augmented Medical Intelligence
+
+Powered by modern RAG architecture:
+
+Medical knowledge retrieval
+Semantic search
+Context-aware responses
+Patient history understanding
+Intelligent recommendations
+
+## 👨‍⚕️ Multi-Role Healthcare Dashboard
+Patient Portal
+Medical Records
+Prediction History
+AI Consultations
+Lab Reports
+Doctor Dashboard
+Patient Monitoring
+Diagnostic Assistance
+Medical Analytics
+Report Reviews
+Admin Console
+User Management
+System Analytics
+Audit Logs
+Security Controls
+
 ---
 
 ## 🚀 Quick Start
@@ -71,13 +138,44 @@ Visit: http://localhost:3000
 
 ## 🏗️ Architecture
 
+┌─────────────────────────┐ │ Next.js Frontend │ └────────────┬────────────┘ │ ▼ ┌─────────────────────────┐ │ FastAPI Backend │ └────────────┬────────────┘ │ ┌───────────┼───────────┐ │ │ │ ▼ ▼ ▼ Disease AI Chat Report Models Engine Analysis │ │ │ └───────────┼───────────┘ │ ▼ AI Inference Layer ├─ Ollama ├─ Gemini ├─ OpenAI └─ Anthropic │ ▼ PostgreSQL
+
 - **Frontend**: Next.js 15 with TypeScript & Tailwind CSS
 - **Backend**: FastAPI with async/await, middleware stack
 - **AI Engine**: 3-tier inference (Ollama → Gemini → OpenAI/Anthropic)
 - **Database**: SQLite (dev) / PostgreSQL (prod)
 - **ML Models**: 5 scikit-learn/XGBoost classifiers with SHAP
 
-[Full Architecture](https://github.com/pavanbadempet/AI-Healthcare-System#-architecture) | [API Reference](docs/USAGE.md#api-endpoints)
+## 🛠️ Technology Stack
+Frontend
+Next.js 15
+React
+TypeScript
+Tailwind CSS
+ShadCN UI
+Backend
+FastAPI
+Python 3.12+
+Async API Architecture
+Pydantic
+Artificial Intelligence
+Scikit-Learn
+XGBoost
+LangChain
+LangGraph
+Gemini
+Ollama
+OpenAI APIs
+Database
+PostgreSQL
+SQLite
+DevOps
+Docker
+Kubernetes
+Terraform
+GitHub Actions
+
+ [API Reference](docs/USAGE.md#api-endpoints)
 
 ---
 
