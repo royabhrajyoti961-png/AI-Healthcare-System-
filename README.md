@@ -49,7 +49,7 @@ The platform is designed to bridge the gap between patients and healthcare profe
 |---|---|---|
 | JWT + bcrypt auth, RBAC (patient/doctor/admin), audit logging, rate limiting, PII redaction | Docker Compose, Enterprise Stack, Render, Kubernetes, Terraform AWS | Pytest + coverage, CodeQL, Docker builds, HuggingFace, Dependabot |
 
-## Other Features 
+## 🧠 Other Features 
 🧠 Multi-Disease Prediction System
 
 Advanced machine learning models trained on healthcare datasets:
@@ -77,7 +77,7 @@ Treatment awareness
 Medication information
 Patient support interactions
 
-##📄 Smart Lab Report Analysis
+## 📄 Smart Lab Report Analysis
 
 Upload laboratory reports and receive:
 
