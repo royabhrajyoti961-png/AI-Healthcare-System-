@@ -238,8 +238,6 @@ Kubernetes
 Terraform
 GitHub Actions
 
- [API Reference](docs/USAGE.md#api-endpoints)
-
 ---
 
 ## 📖 Documentation
