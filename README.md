@@ -163,8 +163,6 @@ cd frontend && npm install && npm run dev -- -p 3000
 
 Visit: http://localhost:3000
 
-**Full setup:** [Installation Guide](docs/INSTALLATION.md)
-
 ---
 
 ## 🏗️ Architecture
