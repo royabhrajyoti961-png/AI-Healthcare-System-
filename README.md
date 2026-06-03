@@ -100,6 +100,7 @@ Visit: http://localhost:3000
 ---
 
 ## 📊 Project Stats
+--------------------------------------------------------------------
 
 - **5** ML diagnostic models
 - **8** CI/CD pipelines
@@ -110,7 +111,8 @@ Visit: http://localhost:3000
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing For -----
+---------------------------------------------------------------------
 
 We welcome contributions! See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for:
 - Development setup
@@ -120,7 +122,8 @@ We welcome contributions! See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for:
 
 ---
 
-## 📄 License
+## 📄 License 
+----------------------------------------------------------------------
 
 MIT License - See [LICENSE](LICENSE)
 
@@ -128,4 +131,4 @@ MIT License - See [LICENSE](LICENSE)
 
 **🌟 If this project helps you, please consider giving it a star!**
 
-Made with ❤️ by [Pavan Badempet](https://github.com/pavanbadempet)
+Made with ❤️ by 
