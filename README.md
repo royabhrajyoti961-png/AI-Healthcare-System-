@@ -9,7 +9,7 @@
 | [📥 Download](#quick-start) | [✨ Features](#feature-highlights) | [🏗️ Architecture](#architecture) | [📚 Documentation](docs/) | [🐛 Issues](../../issues) | [💬 Discussions](../../discussions) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 
-### 📖 Detailed Docs
+###  Detailed Docs
 - **[Installation Guide](docs/INSTALLATION.md)** - Setup for development & production
 - **[Usage Guide](docs/USAGE.md)** - API endpoints & features
 - **[FAQ](docs/FAQ.md)** - Common questions & answers
