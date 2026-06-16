@@ -1,445 +1,157 @@
-## MedAI Nexus AI Healthcare System
---------------------------------------------------------------------
-
-MedAI Nexus is an intelligent healthcare platform that combines Machine Learning, Generative AI, Retrieval-Augmented Generation (RAG), and Clinical Decision Support Systems to provide predictive diagnostics, medical report understanding, and AI-assisted healthcare services.
-
-The platform is designed to bridge the gap between patients and healthcare professionals through accessible, explainable, and secure AI technologies.
-
----
-
-## 📁 Project Structure
---------------------------------------------------------------------
-
-```text
-MedAI-Nexus/
-
-├── frontend/
-│   ├── app/
-│   ├── components/
-│   └── services/
-│
-├── backend/
-│   ├── api/
-│   ├── models/
-│   ├── services/
-│   └── core/
-│
-├── ai_engine/
-│
-├── datasets/
-│
-├── docs/
-│
-├── tests/
-│
-├── deployments/
-│
-└── infrastructure/
-```
----
-
-## 📑 Quick Navigation
---------------------------------------------------------------------
-
-| [📥 Download](#quick-start) | [✨ Features](#feature-highlights) | [🏗️ Architecture](#architecture) | [📚 Documentation](docs/) | [🐛 Issues](../../issues) | [💬 Discussions](../../discussions) |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-<br/>
-<p>
-  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python" alt="Python" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=next.js" alt="Next.js" />
-  <img src="https://img.shields.io/badge/LangGraph-FF6F00?style=for-the-badge&logo=chainlink" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql" alt="PostgreSQL" />
-</p>
-</div>
----
-## 🚀 Feature Highlights
---------------------------------------------------------------------
-
-| 5 ML Diagnostic Models | 3-Tier AI Inference | RAG Medical Chat |
-|---|---|---|
-| Diabetes, Heart, Liver, Kidney, Lungs — trained on real clinical datasets with SHAP explainability | **Ollama > Gemini > Cloud** automatic fallback. Local inference for sensitive workflows | Gemini embeddings + vector store + LangGraph agent with patient history |
-
-| Enterprise Security | 5 Deployment Options | 8 CI/CD Pipelines |
-|---|---|---|
-| JWT + bcrypt auth, RBAC (patient/doctor/admin), audit logging, rate limiting, PII redaction | Docker Compose, Enterprise Stack, Render, Kubernetes, Terraform AWS | Pytest + coverage, CodeQL, Docker builds, HuggingFace, Dependabot |
-
-## 🧠 Other Features
---------------------------------------------------------------------
-🧠 Multi-Disease Prediction System
-
-Advanced machine learning models trained on healthcare datasets:
-
-Disease	Prediction Status
-Diabetes	✅
-Heart Disease	✅
-Liver Disease	✅
-Kidney Disease	✅
-Lung Disease	✅
-Explainable AI
-SHAP Interpretability
-Risk Scoring
-Feature Importance Analysis
-Confidence Estimation
-
-## 🤖 AI Medical Assistant
-
-An intelligent healthcare chatbot capable of:
-
-Symptom-based guidance
-Medical knowledge retrieval
-Healthcare FAQs
-Treatment awareness
-Medication information
-Patient support interactions
-
-## 📄 Smart Lab Report Analysis
-
-Upload laboratory reports and receive:
-
-Automated report summaries
-Abnormal parameter detection
-Clinical observations
-Health risk indicators
-Easy-to-understand explanations
-
-## 📚 Retrieval-Augmented Medical Intelligence
-
-Powered by modern RAG architecture:
-
-Medical knowledge retrieval
-Semantic search
-Context-aware responses
-Patient history understanding
-Intelligent recommendations
-
-## 👨‍⚕️ Multi-Role Healthcare Dashboard
-Patient Portal
-Medical Records
-Prediction History
-AI Consultations
-Lab Reports
-Doctor Dashboard
-Patient Monitoring
-Diagnostic Assistance
-Medical Analytics
-Report Reviews
-Admin Console
-User Management
-System Analytics
-Audit Logs
-Security Controls
-
-### Doctor Dashboard
-
-* Patient Monitoring
-* Diagnostic Assistance
-* Medical Analytics
-* Report Reviews
-
-### Admin Console
-
-* User Management
-* System Analytics
-* Audit Logs
-* Security Controls
-
----
-
-## 🚀 Quick Start
---------------------------------------------------------------------
-
-```bash
-git clone https://github.com/pavanbadempet/AI-Healthcare-System.git
-cd AI-Healthcare-System
-
-# Backend
-pip install -r backend/requirements.txt
-uvicorn backend.main:app --reload --port 8000
-
-# Frontend (new terminal)
-cd frontend && npm install && npm run dev -- -p 3000
-```
-
-Visit: http://localhost:3000
-
----
-
-## 🏗️ Architecture
---------------------------------------------------------------------
-
-```text
-┌─────────────────────────┐
-│      Next.js Frontend   │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│      FastAPI Backend    │
-└────────────┬────────────┘
-             │
- ┌───────────┼───────────┐
- │           │           │
- ▼           ▼           ▼
-
-Disease    AI Chat     Report
-Models     Engine      Analysis
-
- │           │           │
- └───────────┼───────────┘
-             │
-             ▼
-
-      AI Inference Layer
-
-      ├─ Ollama
-      ├─ Gemini
-      ├─ OpenAI
-      └─ Anthropic
-
-             │
-             ▼
-
-        PostgreSQL
-```
-
-- **Frontend**: Next.js 15 with TypeScript & Tailwind CSS
-- **Backend**: FastAPI with async/await, middleware stack
-- **AI Engine**: 3-tier inference (Ollama → Gemini → OpenAI/Anthropic)
-- **Database**: SQLite (dev) / PostgreSQL (prod)
-- **ML Models**: 5 scikit-learn/XGBoost classifiers with SHAP
-
-## 🛠️ Technology Stack
-Frontend
-Next.js 15
-React
-TypeScript
-Tailwind CSS
-ShadCN UI
-Backend
-FastAPI
-Python 3.12+
-Async API Architecture
-Pydantic
-Artificial Intelligence
-Scikit-Learn
-XGBoost
-LangChain
-LangGraph
-Gemini
-Ollama
-OpenAI APIs
-Database
-PostgreSQL
-SQLite
-DevOps
-Docker
-Kubernetes
-Terraform
-GitHub Actions
-
----
-
-## 📖 Documentation
---------------------------------------------------------------------
-
-| Document | Purpose |
-|----------|---------|
-| [Installation](docs/INSTALLATION.md) | Local setup, Docker, production deployment |
-| [Usage Guide](docs/USAGE.md) | API endpoints, dashboards, authentication |
-| [FAQ](docs/FAQ.md) | Common questions & troubleshooting |
-| [Contributing](docs/CONTRIBUTING.md) | Development setup, code style, testing |
-| [Changelog](docs/CHANGELOG.md) | Version history & roadmap |
-
----
-
-## ⚕️ Medical Disclaimer
-
-⚠️ **This tool is for educational and screening purposes only.** It is NOT a medical diagnosis. Always consult qualified healthcare professionals. See [docs/FAQ.md](docs/FAQ.md) for details.
-
----
-
-## 📊 Project Stats
---------------------------------------------------------------------
-
-- **5** ML diagnostic models
-- **8** CI/CD pipelines
-- **5** deployment options
-- **7** middleware layers
-- **95%+ test coverage**
-- **HIPAA-friendly** design
-
----
-
-## 🤝 Contributing For 
----------------------------------------------------------------------
-
-I will always welcome contributions from developers, researchers, healthcare professionals, and AI enthusiasts !
-
-### Contribution Workflow
-
-1. Fork Repository
-2. Create Feature Branch
-3. Commit Changes
-4. Push Changes
-5. Open Pull Request
-6. Development setup
-7. Code style guidelines
-8. Testing requirements
-9. Pull request process
-
----
-
-## ☁️ Deployment
-----------------------------------------------------------------------
-
-The platform supports multiple deployment strategies:
-
-| Platform       | Supported |
-| -------------- | --------- |
-| Docker Compose | ✅         |
-| AWS            | ✅         |
-| Azure          | ✅         |
-| Google Cloud   | ✅         |
-| Kubernetes     | ✅         |
-| Render         | ✅         |
-
----
-
-## 📊 Performance Highlights
-------------------------------------------------------------------------
-
-| Metric             | Value |
-| ------------------ | ----- |
-| ML Models          | 5     |
-| Deployment Options | 6     |
-| Security Layers    | 8     |
-| AI Engines         | 4     |
-| User Roles         | 3     |
-| API Architecture   | Async |
-| Test Coverage      | 95%+  |
+# OpenHealth: A Comprehensive AI Tool for Remote Health Care    (Under Development)
+
+<img src="static/images/Logo.png" alt="Project Logo"/>
+
+Connect with me on social media and explore my work:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/hemakalyan)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github)](https://github.com/KalyanMurapaka45)
+[![Medium](https://img.shields.io/badge/Medium-Follow-03a57a?style=flat-square&logo=medium)](https://medium.com/@kalyanmurapaka274)
+[![Twitter](https://img.shields.io/twitter/follow/KalyanM45?style=social)](https://twitter.com/KalyanM45)
+[![Sponsor Hema Kalyan Murapaka](https://img.shields.io/badge/Sponsor-Hema_Kalyan-28a745?style=flat-square&logo=github-sponsors)](https://github.com/sponsors/KalyanM45)
 
----
+**Special Thanks to GitHub Sponsors**
 
-## 🎯 Use Cases
-------------------------------------------------------------------------
+## About The Project
 
-### Patients
+In an era where healthcare demands precision, accessibility, and personalised solutions, "OpenHealth" emerges as a groundbreaking initiative at the intersection of technology and medicine. This comprehensive project focuses on Multi-Disease Detection, employing a diverse set of algorithms, including traditional machine learning models, deep learning models, transfer learning, and hybrid models such as VGG-19, ResNet50, Random Forest, and Gradient Boosting. Diseases across specific organs, such as the brain, kidney, heart, liver, and lungs, are accurately predicted, and model performance is rigorously assessed through metrics like accuracy, precision, recall, and F1-score. Adding a layer of sophistication, "OpenHealth" integrates with large language models from Open-source libraries like Hugging Face and GenerativeAI from Google, providing personalised information based on individual health profiles. Furthermore, the project extends its impact by incorporating an AI dietitian and food recommender, tailoring dietary recommendations to individual health conditions. Meticulous organisation is ensured through dedicated directory structures, fostering a modular and maintainable framework. Leveraging Machine Learning operations like Dockers, Data Version Control, and MLflow enhances the overall efficiency and reliability of healthcare systems. In essence, "OpenHealth" represents a transformative force that leverages cutting-edge technologies to usher in a new era of healthcare characterised by accuracy, personalization, and efficiency.
 
-* Health Screening
-* Risk Assessment
-* Report Understanding
-* AI Assistance
 
-### Doctors
+## Library Requirements
 
-* Diagnostic Support
-* Clinical Insights
-* Patient Monitoring
+ - Pandas
+ - Numpy
+ - Scikit-learn
+ - Seaborn
+ - Matplotlib
+ - Flask 
+ - DVC
+ - Catboost
+ - XGBoost
+ - MLflow
+ - Google.generativeai
+ - Streamlit
 
-### Hospitals
+## Getting Started
 
-* Healthcare Automation
-* Analytics
-* Patient Engagement
+This will help you understand how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-### Researchers
+## Installation Steps
 
-* Disease Prediction Research
-* AI Healthcare Experiments
+### Option 1: Installation from GitHub
 
----
+Follow these steps to install and set up the project directly from the GitHub repository:
 
-## 🛣️ Future Roadmap
-----------------------------------------------------------------------
+1. **Clone the Repository**
+   - Open your terminal or command prompt.
+   - Navigate to the directory where you want to install the project.
+   - Run the following command to clone the GitHub repository:
+     ```
+     git clone https://github.com/KalyanMurapaka45/OpenHealth.git
+     ```
 
+2. **Create a Virtual Environment** (Optional but recommended)
+   - It's a good practice to create a virtual environment to manage project dependencies. Run the following command:
+     ```
+     conda create -p <Environment_Name> python==<python version> -y
+     ```
 
-### Phase 2
+3. **Activate the Virtual Environment** (Optional)
+   - Activate the virtual environment based on your operating system:
+       ```
+       conda activate <Environment_Name>/
+       ```
 
-* Medical Image Analysis
-* X-Ray Classification
-* ECG Interpretation
-* Voice-Based Consultation
-* Wearable Device Integration
-* Real-Time Monitoring
+4. **Install Dependencies**
+   - Navigate to the project directory:
+     ```
+     cd [project_directory]
+     ```
+   - Run the following command to install project dependencies:
+     ```
+     pip install -r requirements.txt
+     ```
 
-### Phase 3
+5. **Run the Project**
+   - Start the project by running the appropriate command.
+     ```
+     python app.py
+     ```
 
-* Telemedicine Platform
-* Multi-Language Support
-* AI Clinical Decision Support
-* Mobile Applications
+6. **Access the Project**
+   - Open a web browser or the appropriate client to access the project.
 
----
 
-## 🔒 Security Features
-----------------------------------------------------------------------
+### Option 2: Installation from DockerHub (Coming Soon)
 
-Enterprise-grade security implementation:
+If you prefer to use Docker, you can install and run the project using a Docker container from DockerHub:
 
-* JWT Authentication
-* Role-Based Access Control
-* Password Hashing (bcrypt)
-* API Rate Limiting
-* Audit Logging
-* Secure Session Management
-* PII Protection
-* HTTPS Support
-  
+1. **Pull the Docker Image**
+   - Open your terminal or command prompt.
+   - Run the following command to pull the Docker image from DockerHub:
+     ```
+     docker pull kalyan45/<IMAGE>
+     ```
+     This command downloads the Docker image from the DockerHub.
 
-## 📄 License 
-----------------------------------------------------------------------
+2. **Run the Docker Container**
+   - Start the Docker container by running the following command. Adjust the port mapping as needed:
+     ```
+     docker run -p 5000:5000 kalyan45/<IMAGE>
+     ```
+     This command launches the project within a Docker container.
 
-MIT License - See [LICENSE](LICENSE)
+3. **Access the Project**
+   - Open a web browser or the appropriate client to access the project.<br>
 
----
 
-## ⚠️ Medical Disclaimer
----------------------------------------------------------------------- 
+## API Key Setup
 
-This project is intended for hackathon, educational, research, and healthcare assistance purposes only.
+To use this project, you need an API key from Google Gemini Large Language Model. Follow these steps to obtain and set up your API key:
 
-The predictions and recommendations generated by this system are not substitutes for professional medical advice, diagnosis, or treatment.
+1. **Get API Key:**
+   - Visit the Provided Link [Click Here](https://makersuite.google.com/app/apikey).
+   - Follow the instructions to create an account and obtain your API key.
 
-Always consult qualified healthcare professionals before making medical decisions.
+2. **Set Up API Key:**
+   - Create a file named `.env` in the project root.
+   - Add your API key to the `.env` file:
+     ```dotenv
+     API_KEY=your_api_key_here
+     ```
 
----
+   **Note:** Keep your API key confidential. Do not share it publicly or expose it in your code.<br>
 
- <div align="center">
-   
-## **🌟 If this project helps you, please consider giving it a star! and Building the future of AI-driven healthcare.**
 
-Made with ❤️ by 
+## Contributing
 
-</div>
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
+• **Report bugs**: If you encounter any bugs, please let us know. Open up an issue and let us know the problem.
 
+• **Contribute code**: If you are a developer and want to contribute, follow the instructions below to get started!
 
+1. Fork the Project
+2. Create your Feature Branch
+3. Commit your Changes
+4. Push to the Branch
+5. Open a Pull Request
 
+• **Suggestions**: If you don't want to code but have some awesome ideas, open up an issue explaining some updates or improvements you would like to see!
 
+#### Don't forget to give the project a star! Thanks again!
 
+## License
 
+This project is licensed under the [Open Source Initiative (OSI)](https://opensource.org/) approved GNU General Public License v3.0 License - see the [LICENSE.txt](LICENSE.txt) file for details.<br>
 
 
+## Contact Details
 
+Hema Kalyan Murapaka - [kalyanmurapaka274@gmail.com](kalyanmurapaka274@gmail.com)<br>
 
 
+## Acknowledgements
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+We'd like to extend our gratitude to all individuals and organizations who have played a role in the development and success of this project. Your support, whether through contributions, inspiration, or encouragement, has been invaluable. Thank you for being a part of our journey.

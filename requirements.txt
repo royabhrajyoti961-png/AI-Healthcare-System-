@@ -1,2 +1,19 @@
-# Active backend requirements live in backend/requirements.txt.
--r backend/requirements.txt
+pandas
+numpy
+scikit-learn
+seaborn
+matplotlib
+flask 
+dvc
+catboost
+xgboost
+mlflow
+google.generativeai
+python-dotenv
+streamlit
+tensorflow
+opencv-python
+pymongo
+chainlit
+pymongo[srv]
+-e .
